@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+  height: 6rem;
+  background-color: #3B3937;
+}
+
+.header_menu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 6rem;
+}
+
+.nav_bar ul {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+
+
+.nav_bar>ul li+li {
+  margin-left: 4rem;
+}
+
+.header_support {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.support {
+  color: #FFD6A8;
+}
+
+
+
+.support .phone {
+  margin-left: 3rem;
+}
+
+.header_catalog {
+  border: solid #A9845C 1px;
+  padding: 0.8rem 2rem;
+  background-color: #A9845C;
+  color: #fff;
+}

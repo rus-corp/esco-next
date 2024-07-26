@@ -1,0 +1,25 @@
+.catalog {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.categories ul {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+
+}
+
+.category_item {
+  border: solid #A9845C 1px;
+  padding: 1rem;
+  width: calc(100% / 4);
+  text-align: center;
+  color: #3B3937;
+  opacity: 0.9;
+}
+
+.category_active {
+  font-weight: 700;
+  border: solid #3B3937 2px;
+}
