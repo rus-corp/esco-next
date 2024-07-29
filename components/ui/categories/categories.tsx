@@ -40,7 +40,3 @@ export default function Categories() {
   );
 }
 
-// className={`${styles['category-item']} ${
-//   activeCategory === category.name ? styles['category_active'] : ''
-// }`}
-// >

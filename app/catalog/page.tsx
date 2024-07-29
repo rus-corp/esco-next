@@ -1,8 +1,37 @@
 import style from './catalog.module.css'
+import { CategoryItem } from '@/components/ui';
 
-// ./categ_img/doors.jpg
 
-const categories = ['Межкомнатные двери', 'Входные двери', 'Замки и ручки', 'Противопожарные двери']
+
+const categories = [
+  {
+    id: 1,
+    name: 'Межкомнатные двери',
+    photo: './categ_img/doors.jpg'
+  },
+  {
+    id: 2,
+    name: 'Входные двери',
+    photo: './categ_img/open_door.jpg'
+  },
+  {
+    id: 3,
+    name: 'Замки и ручки',
+    photo: './categ_img/ruchki.jpg'
+  },
+  {
+    id: 4,
+    name: 'Противопожарные двери',
+    photo: './categ_img/fire_door.jpg'
+  },
+  {
+    id: 5,
+    name: 'Скрытые двери',
+    photo: './categ_img/invis_door.jpeg'
+  },
+]
+
+
 
 export default function Catalog() {
   
@@ -11,65 +40,19 @@ export default function Catalog() {
       <h1 className="section-title">Каталог</h1>
       <div className={style.box_list}>
         <div className={style.box_row}>
-          <div className={style.box}>
-            <a href="">
-            <div className={style.category_desc}>
-                <h4 className={style.category_name}>Межкомнатные двери</h4>
-              </div>
-              <div className={style.category_image}>
-              {/* ./categ_img/doors.jpg */}
-                <img className={style.image} src="./categ_img/doors.jpg" alt="" />
-              </div>
-            </a>
-          </div>
-          <div className={style.box}>
-            <a href="">
-            <div className={style.category_desc}>
-                <h4 className={style.category_name}>Межкомнатные двери</h4>
-              </div>
-              <div className={style.category_image}>
-              {/* ./categ_img/fire_door.jpg */}
-                <img className={style.image} src="./categ_img/fire_door.jpg" alt="" />
-              </div>
-            </a>
-          </div>
-          <div className={style.box}>
-            <a href="">
-            <div className={style.category_desc}>
-                <h4 className={style.category_name}>Межкомнатные двери</h4>
-              </div>
-              <div className={style.category_image}>
-              {/* ./categ_img/invis_door.jpeg */}
-                <img className={style.image} src="./categ_img/invis_door.jpeg" alt="" />
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className={`${style.box_row} ${style.second_row}`}>
-        <div className={style.box}>
-            <a href="">
-            <div className={style.category_desc}>
-                <h4 className={style.category_name}>Межкомнатные двери</h4>
-              </div>
-              <div className={style.category_image}>
-              {/* ./categ_img/open_door.jpg */}
-                <img className={style.image} src="./categ_img/open_door.jpg" alt="" />
-              </div>
-            </a>
-          </div>
-          <div className={style.box}>
-            <a href="">
-            <div className={style.category_desc}>
-                <h4 className={style.category_name}>Межкомнатные двери</h4>
-              </div>
-              <div className={style.category_image}>
-              {/* ./categ_img/ruchki.jpg */}
-                <img className={style.image} src="./categ_img/ruchki.jpg" alt="" />
-              </div>
-            </a>
-          </div>
+          {categories.map((obj) => (
+            <CategoryItem 
+              key={obj.id}
+              categoryName={obj.name}
+              imgUrl={obj.photo}
+            />
+          ))}
         </div>
       </div>
     </div>
   );
 }
+
+
+
+

@@ -1,0 +1,22 @@
+
+
+.arrow_right {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  bottom: 1rem;
+  left: 1rem;
+  border: solid rgba(51, 51, 51, 0.1) 1px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background-color .4s ease;
+  transition: left .3s ease;
+}
+
+
+.arrow_right:hover {
+  background-color: #FFD6A8;
+  left: 1.3rem;
+}

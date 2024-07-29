@@ -1,5 +1,6 @@
 import React from "react"
 import style from './header.module.css'
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -7,9 +8,9 @@ export default function Header() {
     <div className="container">
       <div className={style.header_menu}>
         <div className={style.header_logo}>
-          <a href="">
+          <Link  href="/">
             <img className={style.logo} src="./logos/logo_black_header.png" alt="logo" />
-          </a>
+          </Link>
         </div>
         <div className={style.nav_bar}>
           <ul>
@@ -23,7 +24,7 @@ export default function Header() {
           <a href='mailto:info@esco.ru' className={`${style.support} ${style.email}`}>info@esco-doors.com</a>
           <a href='tel:+78002225544' className={`${style.support} ${style.phone}`}>8 (800) 550-81-79</a>
         </div>
-        <button className={style.header_catalog}>Каталог</button>
+        <Link href='/catalog' className={style.header_catalog}>Каталог</Link>
       </div>
     </div>
   </header>

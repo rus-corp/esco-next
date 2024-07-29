@@ -1,0 +1,26 @@
+.offer_item {
+  margin-bottom: 1rem;
+  border-bottom: solid var(--border-def-color) 2px;
+  width: 45%;
+  z-index: 100;
+}
+
+.offer_img {
+  width: 100%;
+  height: 17rem;
+}
+
+.offer_title {
+  margin-top: 2rem;
+}
+
+.offer_desc {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+  line-height: 1.3rem;
+}
+
+.offer_botom {
+  margin: 1rem 0 1rem 0;
+  margin-left: 60%;
+}

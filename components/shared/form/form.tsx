@@ -33,7 +33,7 @@ export default function Form() {
     <section className={style.help}>
       <div className={style.container}>
         <div className={`${style.main_help} ${style.image_container}`}>
-          <img className={style.image} src="./background_img/doors6.jpg" alt="" />
+          <img className={style.image} src="./background_img/form_door.jpg" alt="" />
         </div>
         <div className={`${style.main_help} ${style.text_container}`}>
           <h2>Нужна помощь с выбором?</h2>

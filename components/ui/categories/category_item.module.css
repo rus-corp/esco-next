@@ -1,0 +1,49 @@
+
+.second_row{
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  position: relative;
+  flex: 1;
+  min-width: 30%;
+  width: 30%;
+  background-color: red;
+  border: solid black 1px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  display: flex;
+  padding: 0 0 25%;
+}
+
+.category_desc {
+  position: absolute;
+  align-items: start;
+  width: 100%;
+}
+
+.category_name {
+  width: 100%;
+  position: absolute;
+  text-align: start;
+  color: #3B3937;
+  margin: 1rem 1rem;
+  z-index: 100;
+}
+
+.category_image {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
